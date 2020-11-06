@@ -1,6 +1,6 @@
 {
   "name": "@moogs-nestjs-query/query-typeorm",
-  "version": "0.21.2",
+  "version": "0.22.1",
   "description": "Typeorm adapter for @moogs-nestjs-query/core",
   "author": "doug-martin <doug@dougamartin.com>",
   "homepage": "https://github.com/doug-martin/nestjs-query#readme",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@moogs-nestjs-query/core": "0.21.2",
+    "@moogs-nestjs-query/core": "0.22.1",
     "lodash.filter": "^4.6.0",
     "lodash.omit": "^4.5.0",
     "uuid": "8.3.1"

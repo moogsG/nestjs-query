@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](https://github.com/moogsG/nestjs-query/compare/v0.21.2...v0.22.1) (2020-11-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nestjs/jwt to v7.2.0 ([a8845c2](https://github.com/moogsG/nestjs-query/commit/a8845c2f1473792f11828d99c7c6b0dd697189b6))
+* **deps:** update dependency apollo-server-express to v2.19.0 ([1624f4e](https://github.com/moogsG/nestjs-query/commit/1624f4e99a64258ff381972e5ad5cce1aec146a5))
+* **deps:** update dependency apollo-server-plugin-base to v0.10.2 ([b39da69](https://github.com/moogsG/nestjs-query/commit/b39da690428eaabe39ac184bdc654b54565130e1))
+* **deps:** update dependency graphql-query-complexity to v0.7.1 ([8bd196d](https://github.com/moogsG/nestjs-query/commit/8bd196d017ab7452ce3b7f1ca1f3ef2f0d1e6325))
+* **deps:** update dependency graphql-tools to v6.2.6 ([c1bba6d](https://github.com/moogsG/nestjs-query/commit/c1bba6d4011085929ec5f733a4d6ac640428ee88))
+* **deps:** update dependency pg to v8.4.2 ([be2dd88](https://github.com/moogsG/nestjs-query/commit/be2dd884377b3eaff21a8adaf8f05f08b2ef505f))
+
+
+
+
+
 ## [0.21.2](https://github.com/doug-martin/nestjs-query/compare/v0.21.1...v0.21.2) (2020-10-23)
 
 
