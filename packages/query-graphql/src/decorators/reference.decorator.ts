@@ -1,4 +1,4 @@
-import { ArrayReflector, Class, getPrototypeChain } from '@moogs-nestjs-query/core';
+import { ArrayReflector, Class, getPrototypeChain } from '@moogs/core';
 import { ReferencesOpts, ResolverRelationReference } from '../resolvers/relations';
 import { ReferencesKeys } from '../resolvers/relations/relations.interface';
 import { REFERENCE_KEY } from './constants';

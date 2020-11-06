@@ -1,4 +1,4 @@
-import { AggregateQuery, Class, QueryService, Filter, AggregateResponse } from '@moogs-nestjs-query/core';
+import { AggregateQuery, Class, QueryService, Filter, AggregateResponse } from '@moogs/core';
 import { NestjsQueryDataloader } from './relations.loader';
 
 type AggregateRelationsArgs<DTO, Relation> = {

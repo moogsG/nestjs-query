@@ -1,4 +1,4 @@
-import { Class, Filter, invertSort, mergeFilter, Query, SortDirection, SortField } from '@moogs-nestjs-query/core';
+import { Class, Filter, invertSort, mergeFilter, Query, SortDirection, SortField } from '@moogs/core';
 import { plainToClass } from 'class-transformer';
 import { BadRequestException } from '@nestjs/common';
 import { KeySetCursorPayload, KeySetPagingOpts, PagerStrategy } from './pager-strategy';

@@ -1,5 +1,5 @@
 import { Provider } from '@nestjs/common';
-import { Class } from '@moogs-nestjs-query/core';
+import { Class } from '@moogs/core';
 import { createDefaultAuthorizer, getAuthorizerToken } from '../auth';
 import { getAuthorizer } from '../decorators';
 

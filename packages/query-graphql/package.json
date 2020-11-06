@@ -1,5 +1,5 @@
 {
-  "name": "@moogs-nestjs-query/query-graphql",
+  "name": "@moogs/query-graphql",
   "version": "0.22.2",
   "description": "Nestjs graphql query adapter",
   "author": "doug-martin <doug@dougamartin.com>",
@@ -38,7 +38,7 @@
     "url": "https://github.com/doug-martin/nestjs-query/issues"
   },
   "dependencies": {
-    "@moogs-nestjs-query/core": "0.22.2",
+    "@moogs/core": "0.22.2",
     "graphql-fields": "^2.0.3",
     "lodash.omit": "^4.5.0",
     "lower-case-first": "^2.0.1",
@@ -75,5 +75,6 @@
     "graphql-subscriptions": "1.1.0",
     "ts-mockito": "2.6.1",
     "typescript": "4.0.5"
-  }
+  },
+  "gitHead": "3fde8e11b9d2b5ed4871fe66f7cd7ada3a1cc7d9"
 }

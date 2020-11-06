@@ -1,4 +1,4 @@
-import { Class, ValueReflector } from '@moogs-nestjs-query/core';
+import { Class, ValueReflector } from '@moogs/core';
 import { OffsetQueryArgsType, NoPagingQueryArgsType } from '../query/query-args';
 import { QueryMany, StaticConnection } from './interfaces';
 

@@ -1,4 +1,4 @@
-import { Class, FilterFieldComparison } from '@moogs-nestjs-query/core';
+import { Class, FilterFieldComparison } from '@moogs/core';
 import { Field, InputType } from '@nestjs/graphql';
 import { Type } from 'class-transformer';
 import { IsBoolean, IsNumber, IsOptional, ValidateNested } from 'class-validator';

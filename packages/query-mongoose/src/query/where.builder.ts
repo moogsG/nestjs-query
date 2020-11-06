@@ -1,4 +1,4 @@
-import { Filter, FilterComparisons, FilterFieldComparison } from '@moogs-nestjs-query/core';
+import { Filter, FilterComparisons, FilterFieldComparison } from '@moogs/core';
 import { FilterQuery, Document } from 'mongoose';
 import { EntityComparisonField, ComparisonBuilder } from './comparison.builder';
 

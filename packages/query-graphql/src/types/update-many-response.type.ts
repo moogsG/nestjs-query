@@ -1,4 +1,4 @@
-import { Class, UpdateManyResponse } from '@moogs-nestjs-query/core';
+import { Class, UpdateManyResponse } from '@moogs/core';
 import { Field, Int, ObjectType } from '@nestjs/graphql';
 
 /** @internal */

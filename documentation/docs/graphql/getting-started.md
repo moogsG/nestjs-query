@@ -2,7 +2,7 @@
 title: Getting Started
 ---
 
-The `@moogs-nestjs-query/query-graphql` package provided base `Resolvers` and graphql type classes to make creating code-first graphql CRUD applications easy.
+The `@moogs/query-graphql` package provided base `Resolvers` and graphql type classes to make creating code-first graphql CRUD applications easy.
 
 ## Installation
 

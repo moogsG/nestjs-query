@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { AggregateQuery } from '@moogs-nestjs-query/core';
+import { AggregateQuery } from '@moogs/core';
 import { TestEntity } from '../__fixtures__/test.entity';
 import { AggregateBuilder, MongooseAggregate } from '../../src/query';
 

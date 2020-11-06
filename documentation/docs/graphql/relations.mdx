@@ -122,7 +122,7 @@ Based on the entities defined above we can add a `todoItem` relation to the `Sub
 
 
 ```ts title="sub-task/sub-task.dto.ts" {6}
-import { FilterableField, Relation } from '@moogs-nestjs-query/query-graphql';
+import { FilterableField, Relation } from '@moogs/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime } from '@nestjs/graphql';
 import { TodoItemDTO } from '../todo-item/todo-item.dto.ts';
 
@@ -165,8 +165,8 @@ In this example we `disableRemove`, because `todoItem` is not nullable, by speci
 To set up the resolver you can use the `NestjsQueryGraphQLModule`.
 
 ```ts title="sub-task/sub-task.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { SubTaskDTO } from './sub-task.dto';
 import { SubTaskEntity } from './sub-task.entity';
@@ -182,7 +182,7 @@ import { SubTaskEntity } from './sub-task.entity';
 export class SubTaskModule {}
 ```
 
-`@moogs-nestjs-query/query-graphql` will then automatically create the following graphql definition:
+`@moogs/query-graphql` will then automatically create the following graphql definition:
 
 ```graphql
 type SubTask {
@@ -224,7 +224,7 @@ The preferred method for adding a relation that represents multiple records is t
 Based on the entity definition above we can define a `TodoItemDTO` with a `subTasks` relation.
 
 ```ts title="todo-item/todo-item.dto.ts" {6}
-import { FilterableField, Connection } from '@moogs-nestjs-query/query-graphql';
+import { FilterableField, Connection } from '@moogs/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime } from '@nestjs/graphql';
 import { SubTaskDTO } from '../sub-task/sub-task.dto'
 
@@ -275,8 +275,8 @@ In this example we `disableRemove` because `SubTasks` cannot exist without a `To
 To set up the resolver you can use the `NestjsQueryGraphQLModule`.
 
 ```ts title="todo-item/todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -341,7 +341,7 @@ decorator.
 In this example we'll use the same Entities defined above to create a graphql endpoint that allows filtering `SubTasks` by `TodoItems`.
 
 ```ts title="sub-task/sub-task.dto.ts" {6}
-import { FilterableField, FilterableRelation } from '@moogs-nestjs-query/query-graphql';
+import { FilterableField, FilterableRelation } from '@moogs/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime } from '@nestjs/graphql';
 import { TodoItemDTO } from '../todo-item/todo-item.dto.ts';
 
@@ -372,8 +372,8 @@ Notice the use of `@FilterableRelation` instead of `@Relation`, by using the `@F
 The  module definition remains the same.
 
 ```ts title="sub-task/sub-task.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { SubTaskDTO } from './sub-task.dto';
 import { SubTaskEntity } from './sub-task.entity';
@@ -410,7 +410,7 @@ In this example we'll find all subTasks that are related to a `todoItem` with a 
 Based on the entity definitions above we can create a `TodoItemDTO` with a connection to the `subTasks`.
 
 ```ts title="todo-item/todo-item.dto.ts" {6}
-import { FilterableField, Connection } from '@moogs-nestjs-query/query-graphql';
+import { FilterableField, Connection } from '@moogs/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime } from '@nestjs/graphql';
 import { SubTaskDTO } from '../sub-task/sub-task.dto'
 
@@ -451,8 +451,8 @@ In this example we `disableRemove` because `SubTasks` cannot exist without a `To
 To set up the resolver you can use the `NestjsQueryGraphQLModule`.
 
 ```ts title="todo-item/todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -516,7 +516,7 @@ The `totalCount` field is not eagerly fetched. It will only be executed if the f
 When using the `@Connection` decorator you can enable the `totalCount` field. The `totalCount` field will return the total number of records included in the connection.
 
 ```ts title="todo-item/todo-item.dto.ts" {6}
-import { FilterableField, Connection } from '@moogs-nestjs-query/query-graphql';
+import { FilterableField, Connection } from '@moogs/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime } from '@nestjs/graphql';
 import { SubTaskDTO } from '../sub-task/sub-task.dto'
 
@@ -583,7 +583,7 @@ decorator.
 In this example we'll use the same Entities defined above to create a graphql endpoint that allows filtering `TodoItems` by `subTasks`.
 
 ```ts title="todo-item/todo-item.dto.ts" {6}
-import { FilterableField, FilterableConnection } from '@moogs-nestjs-query/query-graphql';
+import { FilterableField, FilterableConnection } from '@moogs/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime } from '@nestjs/graphql';
 import { SubTaskDTO } from '../sub-task/sub-task.dto'
 
@@ -612,8 +612,8 @@ Notice the use of `@FilterableConnection` instead of `@Connection`, by using the
 The  module definition remains the same.
 
 ```ts title="todo-item/todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -884,7 +884,7 @@ When using The `Relatable` mixin adds all relations functionality to a resolver.
 In this example we expose on read endpoints for todo items with the relations defined on the `TodoItemDTO`.
 
 ```ts title="todo-item/todo-item.resolver.ts" {12-14}
-import { ReadResolver, Relatable } from '@moogs-nestjs-query/query-graphql';
+import { ReadResolver, Relatable } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { AuthGuard } from '../auth.guard';
 import { SubTaskDTO } from '../sub-task/dto/sub-task.dto';

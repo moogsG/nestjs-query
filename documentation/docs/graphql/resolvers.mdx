@@ -24,8 +24,8 @@ The easiest way to get started is to use the `@NestjsQueryGraphQLModule`. The `N
 <TabItem value="typeorm">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -45,8 +45,8 @@ export class TodoItemModule {}
 <TabItem value="sequelize">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQuerySequelizeModule } from '@moogs-nestjs-query/query-sequelize';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQuerySequelizeModule } from '@moogs/query-sequelize';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -66,8 +66,8 @@ export class TodoItemModule {}
 <TabItem value="mongoose">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryMongooseModule } from '@moogs-nestjs-query/query-mongoose';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryMongooseModule } from '@moogs/query-mongoose';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -105,8 +105,8 @@ your class with `@Resolver`.
 :::
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver, Query, Args } from '@nestjs/graphql';
 import { TodoItemDTO } from './dto/todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -256,8 +256,8 @@ We can then update our resolver to use the new `TodoItemInputDTO`
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemInputDTO } from './todo-item.input';
 import { TodoItemDTO } from './todo-item.dto';
@@ -283,8 +283,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemInputDTO } from './todo-item.input';
 import { TodoItemDTO } from './todo-item.dto';
@@ -326,8 +326,8 @@ In this example we disable all `create` endpoints
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -351,8 +351,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -389,8 +389,8 @@ In this example we disable all `many` mutations. This will prevent `createManyTo
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -416,8 +416,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -489,8 +489,8 @@ We can then add it to each of our mutation endpoints
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { AuthGuard } from '../auth.guard';
 import { TodoItemDTO } from './todo-item.dto';
@@ -519,8 +519,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { AuthGuard } from '../auth.guard';
 import { TodoItemDTO } from './todo-item.dto';
@@ -560,8 +560,8 @@ mutations.
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { AuthGuard } from '../auth.guard';
 import { TodoItemDTO } from './todo-item.dto';
@@ -590,8 +590,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { AuthGuard } from '../auth.guard';
 import { TodoItemDTO } from './todo-item.dto';
@@ -634,8 +634,8 @@ In this example we specify the default filter to be `completed IS TRUE`.
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { AuthGuard } from '../auth.guard';
 import { TodoItemDTO } from './todo-item.dto';
@@ -662,8 +662,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -706,8 +706,8 @@ In this example we specify the `defaultResultSize` to 5 and `maxResultsSize` to 
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { AuthGuard } from '../auth.guard';
 import { TodoItemDTO } from './todo-item.dto';
@@ -734,8 +734,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -780,8 +780,8 @@ When using the `OFFSET` strategy your the paging arguments for a many query will
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts" {14}
-import { NestjsQueryGraphQLModule, PagingStrategies } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule, PagingStrategies } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -805,8 +805,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts" {9}
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver, PagingStrategies } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver, PagingStrategies } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -838,8 +838,8 @@ To disable paging entirely you can use the `NONE` `pagingStrategy`. When using `
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts" {14}
-import { NestjsQueryGraphQLModule, PagingStrategies } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule, PagingStrategies } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -863,8 +863,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts" {9}
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver, PagingStrategies } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver, PagingStrategies } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -912,8 +912,8 @@ To enable the `totalCount` field for connections (including relations) in a reso
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts" {14}
-import { NestjsQueryGraphQLModule, PagingStrategies } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule, PagingStrategies } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -937,8 +937,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts" {9}
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver, PagingStrategies } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver, PagingStrategies } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1068,9 +1068,9 @@ In this example we specify the default sort to be by `title`.
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { SortDirection } from '@moogs-nestjs-query/core'
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { SortDirection } from '@moogs/core'
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { AuthGuard } from '../auth.guard';
 import { TodoItemDTO } from './todo-item.dto';
@@ -1097,8 +1097,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { SortDirection, QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { SortDirection, QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1138,8 +1138,8 @@ In this example we'll change the `todoItem` query to `findTodoItem` and the `tod
 <TabItem value="module">
 
 ```ts title="todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1163,8 +1163,8 @@ export class TodoItemModule {}
 <TabItem value="resolver">
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CRUDResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1188,7 +1188,7 @@ export class TodoItemResolver extends CRUDResolver(TodoItemDTO, {
 
 ## Individual Resolvers
 
-The `@moogs-nestjs-query/query-graphql` package exposes each part of `CRUD` into individual mixins and resolvers allowing you
+The `@moogs/query-graphql` package exposes each part of `CRUD` into individual mixins and resolvers allowing you
 to pick and choose what functionality you want to expose.
 
 :::note
@@ -1205,8 +1205,8 @@ The `CreateResolver` will only expose the `createOne` and `createMany` endpoints
 For example the following resolver will expose the `createOneTodoItem` and `createManyTodoItems` mutations.
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { CreateResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { CreateResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1231,8 +1231,8 @@ can be passed to the `ReadResolver`
 For example the following resolver will expose the `todoItems` and `todoItem` queries.
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { ReadResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { ReadResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1256,8 +1256,8 @@ The `UpdateResolver` will only expose the `updateOne` and `updateMany` endpoints
 For example the following resolver will expose the `updateOneTodoItem` and `updateManyTodoItems` mutations.
 
 ```ts title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { UpdateResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { UpdateResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1281,8 +1281,8 @@ The `DeleteResolver` will only expose the `deleteOne` and `deleteMany` endpoints
 For example the following resolver will expose the `updateOneTodoItem` and `updateManyTodoItems` mutations.
 
 ``` title="todo-item.resolver.ts"
-import { QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { DeleteResolver } from '@moogs-nestjs-query/query-graphql';
+import { QueryService, InjectQueryService } from '@moogs/core';
+import { DeleteResolver } from '@moogs/query-graphql';
 import { Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1307,7 +1307,7 @@ Lets create a new query endpoint that only returns completed `TodoItems`.
 First create a file named `types.ts`. And add the following.
 
 ```ts title="types.ts"
-import { ConnectionType, QueryArgsType } from '@moogs-nestjs-query/query-graphql';
+import { ConnectionType, QueryArgsType } from '@moogs/query-graphql';
 import { ArgsType } from '@nestjs/graphql';
 import { TodoItemDTO } from './dto/todo-item.dto';
 
@@ -1326,8 +1326,8 @@ In the code above we export two types. `TodoItemConnection` and `TodoItemQuery`.
 In your resolver you can now create a new `completedTodoItems` method with the following:
 
 ```ts title="todo-item.resolver.ts"
-import { Filter, QueryService, InjectQueryService } from '@moogs-nestjs-query/core';
-import { ConnectionType, CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+import { Filter, QueryService, InjectQueryService } from '@moogs/core';
+import { ConnectionType, CRUDResolver } from '@moogs/query-graphql';
 import { Args, Query, Resolver } from '@nestjs/graphql';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -1403,7 +1403,7 @@ The last step is to add the resolver to the module.
 
 ```ts title="todo-items.module.ts"
 import { Module } from '@nestjs/common';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { TodoItemEntity } from './todo-item.entity';
 import { TodoItemsResolver } from './todo-items.resolver';
 

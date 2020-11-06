@@ -1,4 +1,4 @@
-import { Query, SortField } from '@moogs-nestjs-query/core';
+import { Query, SortField } from '@moogs/core';
 import { CursorPagingType } from '../../../../query';
 
 export interface OffsetPagingOpts {

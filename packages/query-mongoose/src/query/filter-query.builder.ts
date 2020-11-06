@@ -1,4 +1,4 @@
-import { AggregateQuery, Filter, Query, SortDirection, SortField } from '@moogs-nestjs-query/core';
+import { AggregateQuery, Filter, Query, SortDirection, SortField } from '@moogs/core';
 import { FilterQuery, Document } from 'mongoose';
 import { AggregateBuilder, MongooseAggregate } from './aggregate.builder';
 import { getSchemaKey } from './helpers';

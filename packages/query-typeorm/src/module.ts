@@ -1,4 +1,4 @@
-import { Class } from '@moogs-nestjs-query/core';
+import { Class } from '@moogs/core';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DynamicModule } from '@nestjs/common';
 import { Connection, ConnectionOptions } from 'typeorm';

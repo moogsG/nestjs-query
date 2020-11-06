@@ -8,7 +8,7 @@ import {
   ModifyRelationOptions,
   FindRelationOptions,
   GetByIdOptions,
-} from '@moogs-nestjs-query/core';
+} from '@moogs/core';
 import { Repository, RelationQueryBuilder as TypeOrmRelationQueryBuilder, ObjectLiteral } from 'typeorm';
 import lodashFilter from 'lodash.filter';
 import lodashOmit from 'lodash.omit';

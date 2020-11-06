@@ -1,5 +1,5 @@
 import { Field, ObjectType, Int } from '@nestjs/graphql';
-import { Class, MapReflector } from '@moogs-nestjs-query/core';
+import { Class, MapReflector } from '@moogs/core';
 import { NotImplementedException } from '@nestjs/common';
 import { SkipIf } from '../../../decorators';
 import { CursorQueryArgsType } from '../../query';

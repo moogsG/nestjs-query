@@ -10,7 +10,7 @@ import {
   ModifyRelationOptions,
   Query,
   AssemblerFactory,
-} from '@moogs-nestjs-query/core';
+} from '@moogs/core';
 import { Document, Model as MongooseModel } from 'mongoose';
 import { AggregateBuilder, FilterQueryBuilder } from '../query';
 import {

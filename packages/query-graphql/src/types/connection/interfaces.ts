@@ -1,4 +1,4 @@
-import { Filter, Query } from '@moogs-nestjs-query/core';
+import { Filter, Query } from '@moogs/core';
 import { ReturnTypeFuncValue } from '@nestjs/graphql';
 import { QueryArgsType } from '../query';
 import { ArrayConnectionType } from './array-connection.type';

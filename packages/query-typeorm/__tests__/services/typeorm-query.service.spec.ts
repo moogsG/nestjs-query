@@ -1,4 +1,4 @@
-import { Filter } from '@moogs-nestjs-query/core';
+import { Filter } from '@moogs/core';
 import { Test, TestingModule } from '@nestjs/testing';
 import { plainToClass } from 'class-transformer';
 import { Repository } from 'typeorm';

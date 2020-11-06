@@ -1,4 +1,4 @@
-import { ArrayReflector, Class, FilterComparisonOperators, getPrototypeChain } from '@moogs-nestjs-query/core';
+import { ArrayReflector, Class, FilterComparisonOperators, getPrototypeChain } from '@moogs/core';
 import { Field, FieldOptions, ReturnTypeFunc } from '@nestjs/graphql';
 import { FILTERABLE_FIELD_KEY } from './constants';
 
@@ -23,7 +23,7 @@ export interface FilterableFieldDescriptor {
  * In the following DTO `id`, `title` and `completed` are filterable.
  *
  * ```ts
- * import { FilterableField } from '@moogs-nestjs-query/query-graphql';
+ * import { FilterableField } from '@moogs/query-graphql';
  * import { ObjectType, ID, GraphQLISODateTime, Field } from '@nestjs/graphql';
  *
  * @ObjectType('TodoItem')

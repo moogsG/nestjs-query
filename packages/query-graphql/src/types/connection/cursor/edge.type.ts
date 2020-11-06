@@ -1,5 +1,5 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { Class, ValueReflector } from '@moogs-nestjs-query/core';
+import { Class, ValueReflector } from '@moogs/core';
 import { ConnectionCursorType, ConnectionCursorScalar } from '../../cursor.scalar';
 import { getGraphqlObjectName } from '../../../common';
 

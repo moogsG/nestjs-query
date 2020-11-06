@@ -1,4 +1,4 @@
-import { Class } from '@moogs-nestjs-query/core';
+import { Class } from '@moogs/core';
 import { ArgsType, Field } from '@nestjs/graphql';
 import { Type } from 'class-transformer';
 import { ValidateNested } from 'class-validator';

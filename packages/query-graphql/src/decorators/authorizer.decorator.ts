@@ -1,4 +1,4 @@
-import { Class, MetaValue, ValueReflector } from '@moogs-nestjs-query/core';
+import { Class, MetaValue, ValueReflector } from '@moogs/core';
 import { AuthorizerOptions, createDefaultAuthorizer, Authorizer } from '../auth';
 import { AUTHORIZER_KEY } from './constants';
 

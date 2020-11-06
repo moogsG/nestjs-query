@@ -1,5 +1,5 @@
 import omit from 'lodash.omit';
-import { ModifyRelationOptions } from '@moogs-nestjs-query/core';
+import { ModifyRelationOptions } from '@moogs/core';
 import { ResolverMethodOpts } from '../../decorators';
 import { RelationTypeMap, ResolverRelation, ResolverRelationReference } from './relations.interface';
 import { Authorizer } from '../../auth';

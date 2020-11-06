@@ -1,5 +1,5 @@
 import { Brackets, WhereExpression } from 'typeorm';
-import { Filter, FilterComparisons, FilterFieldComparison } from '@moogs-nestjs-query/core';
+import { Filter, FilterComparisons, FilterFieldComparison } from '@moogs/core';
 import { EntityComparisonField, SQLComparisonBuilder } from './sql-comparison.builder';
 
 /**

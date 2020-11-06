@@ -1,4 +1,4 @@
-import { Class, DeepPartial, QueryService } from '@moogs-nestjs-query/core';
+import { Class, DeepPartial, QueryService } from '@moogs/core';
 import { PagingStrategies } from '../types';
 import { Aggregateable, AggregateResolverOpts, AggregateResolver } from './aggregate.resolver';
 import { Relatable } from './relations';
@@ -57,7 +57,7 @@ export interface CRUDResolver<
  * [[UpdateResolver]], and [[DeleteResolver]].
  *
  * ```ts
- * import { CRUDResolver } from '@moogs-nestjs-query/query-graphql';
+ * import { CRUDResolver } from '@moogs/query-graphql';
  * import { Resolver } from '@nestjs/graphql';
  * import { TodoItemDTO } from './dto/todo-item.dto';
  * import { TodoItemService } from './todo-item.service';

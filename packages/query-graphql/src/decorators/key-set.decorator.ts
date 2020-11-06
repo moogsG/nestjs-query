@@ -1,4 +1,4 @@
-import { Class, MetaValue, ValueReflector } from '@moogs-nestjs-query/core';
+import { Class, MetaValue, ValueReflector } from '@moogs/core';
 import { KEY_SET_KEY } from './constants';
 
 const reflector = new ValueReflector(KEY_SET_KEY);

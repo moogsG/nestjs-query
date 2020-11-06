@@ -1,5 +1,5 @@
 import { SelectQueryBuilder } from 'typeorm';
-import { AggregateQuery, AggregateResponse } from '@moogs-nestjs-query/core';
+import { AggregateQuery, AggregateResponse } from '@moogs/core';
 import { BadRequestException } from '@nestjs/common';
 
 enum AggregateFuncs {

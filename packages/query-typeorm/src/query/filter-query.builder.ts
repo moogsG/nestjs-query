@@ -1,4 +1,4 @@
-import { Filter, Paging, Query, SortField, getFilterFields, AggregateQuery } from '@moogs-nestjs-query/core';
+import { Filter, Paging, Query, SortField, getFilterFields, AggregateQuery } from '@moogs/core';
 import {
   DeleteQueryBuilder,
   QueryBuilder,

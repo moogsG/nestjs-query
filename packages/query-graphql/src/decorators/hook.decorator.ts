@@ -1,4 +1,4 @@
-import { Class, getClassMetadata, classMetadataDecorator, MetaValue, Query } from '@moogs-nestjs-query/core';
+import { Class, getClassMetadata, classMetadataDecorator, MetaValue, Query } from '@moogs/core';
 import {
   CreateManyInputType,
   CreateOneInputType,

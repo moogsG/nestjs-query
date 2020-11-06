@@ -1,4 +1,4 @@
-import { DeepPartial } from '@moogs-nestjs-query/core';
+import { DeepPartial } from '@moogs/core';
 import { Test, TestingModule } from '@nestjs/testing';
 import { InjectModel, SequelizeModule } from '@nestjs/sequelize';
 import { ModelCtor, Sequelize } from 'sequelize-typescript';

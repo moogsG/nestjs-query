@@ -6,7 +6,7 @@ import {
   mergeFilter,
   QueryService,
   UpdateManyResponse,
-} from '@moogs-nestjs-query/core';
+} from '@moogs/core';
 import { ArgsType, InputType, Resolver, Args, PartialType, Context } from '@nestjs/graphql';
 import omit from 'lodash.omit';
 import { DTONames, getDTONames } from '../common';

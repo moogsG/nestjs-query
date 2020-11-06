@@ -1,6 +1,6 @@
 import { Min, Validate, IsPositive } from 'class-validator';
 import { Field, InputType, Int } from '@nestjs/graphql';
-import { Paging } from '@moogs-nestjs-query/core';
+import { Paging } from '@moogs/core';
 import { ConnectionCursorType, ConnectionCursorScalar } from '../../cursor.scalar';
 import { CannotUseWith, CannotUseWithout, IsUndefined } from '../../validators';
 import { PagingStrategies } from './constants';

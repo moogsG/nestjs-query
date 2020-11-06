@@ -1,4 +1,4 @@
-import { getQueryServiceToken } from '@moogs-nestjs-query/core';
+import { getQueryServiceToken } from '@moogs/core';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { mock, instance } from 'ts-mockito';

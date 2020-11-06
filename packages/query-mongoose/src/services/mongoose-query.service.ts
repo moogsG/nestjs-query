@@ -12,7 +12,7 @@ import {
   QueryService,
   UpdateManyResponse,
   UpdateOneOptions,
-} from '@moogs-nestjs-query/core';
+} from '@moogs/core';
 import { NotFoundException } from '@nestjs/common';
 import { CreateQuery, Document, DocumentToObjectOptions, Model as MongooseModel, UpdateQuery } from 'mongoose';
 import { AggregateBuilder, FilterQueryBuilder } from '../query';
@@ -58,7 +58,7 @@ export class MongooseQueryService<Entity extends Document>
   }
 
   /**
-   * Query for multiple entities, using a Query from `@moogs-nestjs-query/core`.
+   * Query for multiple entities, using a Query from `@moogs/core`.
    *
    * @example
    * ```ts
@@ -185,7 +185,7 @@ export class MongooseQueryService<Entity extends Document>
   }
 
   /**
-   * Update multiple entities with a `@moogs-nestjs-query/core` Filter.
+   * Update multiple entities with a `@moogs/core` Filter.
    *
    * @example
    * ```ts
@@ -226,7 +226,7 @@ export class MongooseQueryService<Entity extends Document>
   }
 
   /**
-   * Delete multiple records with a `@moogs-nestjs-query/core` `Filter`.
+   * Delete multiple records with a `@moogs/core` `Filter`.
    *
    * @example
    *

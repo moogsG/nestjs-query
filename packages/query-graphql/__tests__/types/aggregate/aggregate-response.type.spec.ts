@@ -1,5 +1,5 @@
 // eslint-disable-next-line max-classes-per-file
-import { AggregateResponse } from '@moogs-nestjs-query/core';
+import { AggregateResponse } from '@moogs/core';
 import { Resolver, Query, ObjectType, GraphQLISODateTime } from '@nestjs/graphql';
 import { AggregateResponseType, FilterableField } from '../../../src';
 import { aggregateResponseTypeSDL, aggregateResponseTypeWithCustomNameSDL, expectSDL } from '../../__fixtures__';

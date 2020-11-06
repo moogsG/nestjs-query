@@ -1,4 +1,4 @@
-import { Class, QueryService } from '@moogs-nestjs-query/core';
+import { Class, QueryService } from '@moogs/core';
 import { Parent, Resolver } from '@nestjs/graphql';
 import { getDTONames } from '../../common';
 import { ResolverField } from '../../decorators';

@@ -173,7 +173,7 @@ npx nest g cl todo-item.dto todo-item
 Now lets fill out the DTO. Add the following to `src/todo-item/todo-item.dto.ts`.
 
 ```ts title="todo-item/todo-item.dto.ts"
-import { FilterableField } from '@moogs-nestjs-query/query-graphql';
+import { FilterableField } from '@moogs/query-graphql';
 import { ObjectType, GraphQLISODateTime, Field, Int } from '@nestjs/graphql';
 
 @ObjectType('TodoItem')
@@ -197,7 +197,7 @@ export class TodoItemDTO {
 
 ```
 
-Notice the use of `@FilterableField` this will let `@moogs-nestjs-query/query-graphql` know to allow filtering on the
+Notice the use of `@FilterableField` this will let `@moogs/query-graphql` know to allow filtering on the
 corresponding field. If you just use `@Field` then you will not be able to filter on the corresponding field.
 
 ## Wire everything up.
@@ -232,8 +232,8 @@ The `NestjsQueryGraphQLModule` will automatically create a Resolver that will ex
 <TabItem value="typeorm">
 
 ```ts {9-15}
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -256,8 +256,8 @@ export class TodoItemModule {}
 <TabItem value="sequelize">
 
 ```ts {9-15}
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQuerySequelizeModule } from '@moogs-nestjs-query/query-sequelize';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQuerySequelizeModule } from '@moogs/query-sequelize';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -280,8 +280,8 @@ export class TodoItemModule {}
 <TabItem value="mongoose">
 
 ```ts {9-19}
-import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
-import { NestjsQueryMongooseModule } from '@moogs-nestjs-query/query-mongoose';
+import { NestjsQueryGraphQLModule } from '@moogs/query-graphql';
+import { NestjsQueryMongooseModule } from '@moogs/query-mongoose';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';

@@ -1,4 +1,4 @@
-import { Class } from '@moogs-nestjs-query/core';
+import { Class } from '@moogs/core';
 
 /** @internal */
 export class UnregisteredObjectType<T> extends Error {

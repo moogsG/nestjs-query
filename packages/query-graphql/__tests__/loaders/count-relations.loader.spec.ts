@@ -1,4 +1,4 @@
-import { QueryService } from '@moogs-nestjs-query/core';
+import { QueryService } from '@moogs/core';
 import { mock, instance, when, deepEqual } from 'ts-mockito';
 import { CountRelationsLoader } from '../../src/loader';
 

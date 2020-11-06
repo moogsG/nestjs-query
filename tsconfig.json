@@ -3,11 +3,11 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@moogs-nestjs-query/core": ["packages/core/src"],
-            "@moogs-nestjs-query/query-graphql": ["packages/query-graphql/src"],
-            "@moogs-nestjs-query/query-typeorm": ["packages/query-typeorm/src"],
-            "@moogs-nestjs-query/query-sequelize": ["packages/query-sequelize/src"],
-            "@moogs-nestjs-query/query-mongoose": ["packages/query-mongoose/src"]
+            "@moogs/core": ["packages/core/src"],
+            "@moogs/query-graphql": ["packages/query-graphql/src"],
+            "@moogs/query-typeorm": ["packages/query-typeorm/src"],
+            "@moogs/query-sequelize": ["packages/query-sequelize/src"],
+            "@moogs/query-mongoose": ["packages/query-mongoose/src"]
         }
     },
     "references": [

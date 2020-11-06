@@ -1,4 +1,4 @@
-import { Class } from '@moogs-nestjs-query/core';
+import { Class } from '@moogs/core';
 import { PubSub } from 'graphql-subscriptions';
 import { DTONamesOpts, getDTONames } from '../common';
 import { GraphQLPubSub } from './pub-sub.interface';

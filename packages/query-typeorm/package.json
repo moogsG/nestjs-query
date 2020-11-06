@@ -1,7 +1,7 @@
 {
-  "name": "@moogs-nestjs-query/query-typeorm",
+  "name": "@moogs/query-typeorm",
   "version": "0.22.2",
-  "description": "Typeorm adapter for @moogs-nestjs-query/core",
+  "description": "Typeorm adapter for @moogs/core",
   "author": "doug-martin <doug@dougamartin.com>",
   "homepage": "https://github.com/doug-martin/nestjs-query#readme",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@moogs-nestjs-query/core": "0.22.2",
+    "@moogs/core": "0.22.2",
     "lodash.filter": "^4.6.0",
     "lodash.omit": "^4.5.0",
     "uuid": "8.3.1"
@@ -55,5 +55,6 @@
   },
   "bugs": {
     "url": "https://github.com/doug-martin/nestjs-query/issues"
-  }
+  },
+  "gitHead": "3fde8e11b9d2b5ed4871fe66f7cd7ada3a1cc7d9"
 }

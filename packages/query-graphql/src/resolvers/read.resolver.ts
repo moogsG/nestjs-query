@@ -1,4 +1,4 @@
-import { Class, mergeQuery, MetaValue, QueryService } from '@moogs-nestjs-query/core';
+import { Class, mergeQuery, MetaValue, QueryService } from '@moogs/core';
 import { ArgsType, Resolver, Context } from '@nestjs/graphql';
 import omit from 'lodash.omit';
 import { getDTONames } from '../common';

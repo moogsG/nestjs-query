@@ -1,6 +1,6 @@
 // eslint-disable-next-line max-classes-per-file
 import { Test, TestingModule } from '@nestjs/testing';
-import { Filter } from '@moogs-nestjs-query/core';
+import { Filter } from '@moogs/core';
 import { Injectable } from '@nestjs/common';
 import { Authorizer, Relation, Authorize } from '../../src';
 import { getAuthorizerToken } from '../../src/auth';

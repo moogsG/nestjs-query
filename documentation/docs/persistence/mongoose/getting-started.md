@@ -2,7 +2,7 @@
 title: Getting Started
 ---
 
-The `@moogs-nestjs-query/query-mongoose` package provides an implementation of `@moogs-nestjs-query/core` [QueryService](../../concepts/services.md).
+The `@moogs/query-mongoose` package provides an implementation of `@moogs/core` [QueryService](../../concepts/services.md).
 
 This package is built using [mongoose](https://mongoosejs.com/) and [@nestjs/mongoose](https://docs.nestjs.com/techniques/mongodb). If you are unfamiliar with them I suggest you read their documentation first.
 

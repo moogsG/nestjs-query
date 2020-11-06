@@ -3,7 +3,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { InjectModel, MongooseModule } from '@nestjs/mongoose';
 import { ObjectId } from 'mongodb';
 import { Model, Document } from 'mongoose';
-import { SortDirection } from '@moogs-nestjs-query/core';
+import { SortDirection } from '@moogs/core';
 import { MongooseQueryService } from '../../src/services';
 import {
   TestReference,

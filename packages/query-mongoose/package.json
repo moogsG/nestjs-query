@@ -1,7 +1,7 @@
 {
-  "name": "@moogs-nestjs-query/query-mongoose",
+  "name": "@moogs/query-mongoose",
   "version": "0.22.2",
-  "description": "Mongoose adapter for @moogs-nestjs-query/core -> added subdocument queries",
+  "description": "Mongoose adapter for @moogs/core -> added subdocument queries",
   "author": "doug-martin <doug@dougamartin.com>",
   "homepage": "https://github.com/doug-martin/nestjs-query#readme",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@moogs-nestjs-query/core": "0.22.2",
+    "@moogs/core": "0.22.2",
     "lodash.escaperegexp": "^4.1.2",
     "lodash.merge": "^4.6.2"
   },
@@ -56,5 +56,6 @@
   },
   "bugs": {
     "url": "https://github.com/doug-martin/nestjs-query/issues"
-  }
+  },
+  "gitHead": "3fde8e11b9d2b5ed4871fe66f7cd7ada3a1cc7d9"
 }

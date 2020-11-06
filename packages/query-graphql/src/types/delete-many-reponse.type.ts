@@ -1,4 +1,4 @@
-import { Class, DeleteManyResponse } from '@moogs-nestjs-query/core';
+import { Class, DeleteManyResponse } from '@moogs/core';
 import { Field, Int, ObjectType } from '@nestjs/graphql';
 
 /** @internal */

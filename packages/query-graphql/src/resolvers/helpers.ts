@@ -1,4 +1,4 @@
-import { applyFilter, Class, Filter } from '@moogs-nestjs-query/core';
+import { applyFilter, Class, Filter } from '@moogs/core';
 import { plainToClass } from 'class-transformer';
 import { validate } from 'class-validator';
 import { BadRequestException } from '@nestjs/common';

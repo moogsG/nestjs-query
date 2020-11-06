@@ -1,4 +1,4 @@
-import { Paging } from '@moogs-nestjs-query/core';
+import { Paging } from '@moogs/core';
 import { IsInt } from 'class-validator';
 import { Field, InputType, Int } from '@nestjs/graphql';
 import { IsUndefined } from '../../validators';

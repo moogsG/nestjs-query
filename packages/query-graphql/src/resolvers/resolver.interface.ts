@@ -1,4 +1,4 @@
-import { QueryService } from '@moogs-nestjs-query/core';
+import { QueryService } from '@moogs/core';
 import { DTONamesOpts } from '../common';
 import { ResolverMethodOpts, SubscriptionResolverMethodOpts } from '../decorators';
 import { GraphQLPubSub } from '../subscription';

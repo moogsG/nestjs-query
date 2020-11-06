@@ -1,5 +1,5 @@
 import sequelize, { Projectable } from 'sequelize';
-import { AggregateQuery, AggregateResponse } from '@moogs-nestjs-query/core';
+import { AggregateQuery, AggregateResponse } from '@moogs/core';
 import { Model, ModelCtor } from 'sequelize-typescript';
 import { BadRequestException } from '@nestjs/common';
 

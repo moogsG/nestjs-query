@@ -1,4 +1,4 @@
-import { AssemblerSerializer, AssemblerDeserializer, getQueryServiceToken } from '@moogs-nestjs-query/core';
+import { AssemblerSerializer, AssemblerDeserializer, getQueryServiceToken } from '@moogs/core';
 import { FactoryProvider } from '@nestjs/common';
 import { ModelCtor, Model, SequelizeOptions } from 'sequelize-typescript';
 import { getModelToken } from '@nestjs/sequelize';

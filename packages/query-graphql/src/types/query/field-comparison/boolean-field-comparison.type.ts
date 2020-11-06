@@ -1,6 +1,6 @@
 import { IsBoolean, IsOptional } from 'class-validator';
 import { Field, InputType } from '@nestjs/graphql';
-import { Class, FilterFieldComparison } from '@moogs-nestjs-query/core';
+import { Class, FilterFieldComparison } from '@moogs/core';
 
 /** @internal */
 let booleanFieldComparison: Class<FilterFieldComparison<boolean>>;

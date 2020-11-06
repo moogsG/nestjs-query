@@ -1,4 +1,4 @@
-import { AggregateQuery, AggregateResponse } from '@moogs-nestjs-query/core';
+import { AggregateQuery, AggregateResponse } from '@moogs/core';
 import { BadRequestException } from '@nestjs/common';
 import { Document } from 'mongoose';
 import { getSchemaKey } from './helpers';

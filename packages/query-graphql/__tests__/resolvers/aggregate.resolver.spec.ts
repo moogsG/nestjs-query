@@ -1,4 +1,4 @@
-import { AggregateQuery, AggregateResponse } from '@moogs-nestjs-query/core';
+import { AggregateQuery, AggregateResponse } from '@moogs/core';
 import { Query, Resolver } from '@nestjs/graphql';
 import { when, deepEqual, objectContaining } from 'ts-mockito';
 import { AggregateArgsType } from '../../src';
