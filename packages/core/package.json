@@ -1,5 +1,5 @@
 {
-  "name": "@nestjs-query/core",
+  "name": "@moogs-nestjs-query/core",
   "version": "0.21.2",
   "description": "Base query package",
   "author": "doug-martin <doug@dougamartin.com>",

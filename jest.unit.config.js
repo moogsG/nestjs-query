@@ -6,6 +6,6 @@ module.exports = {
   testMatch: ['**/__tests__/**/*.spec.ts'],
   testEnvironment: 'node',
   moduleNameMapper: {
-    '^@nestjs-query/(.*)$': '<rootDir>/packages/$1/src',
+    '^@moogs-nestjs-query/(.*)$': '<rootDir>/packages/$1/src',
   },
 };

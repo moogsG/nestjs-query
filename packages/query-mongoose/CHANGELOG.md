@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.21.2](https://github.com/doug-martin/nestjs-query/compare/v0.21.1...v0.21.2) (2020-10-23)
 
-**Note:** Version bump only for package @nestjs-query/query-mongoose
+**Note:** Version bump only for package @moogs-nestjs-query/query-mongoose
 
 
 
@@ -13,7 +13,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.21.1](https://github.com/doug-martin/nestjs-query/compare/v0.21.0...v0.21.1) (2020-10-18)
 
-**Note:** Version bump only for package @nestjs-query/query-mongoose
+**Note:** Version bump only for package @moogs-nestjs-query/query-mongoose
 
 
 

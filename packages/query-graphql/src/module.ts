@@ -1,4 +1,4 @@
-import { Assembler, NestjsQueryCoreModule, Class } from '@nestjs-query/core';
+import { Assembler, NestjsQueryCoreModule, Class } from '@moogs-nestjs-query/core';
 import { DynamicModule, ForwardReference, Provider } from '@nestjs/common';
 import { AutoResolverOpts, createAuthorizerProviders, createResolvers } from './providers';
 import { ReadResolverOpts } from './resolvers';

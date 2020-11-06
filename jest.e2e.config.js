@@ -6,6 +6,6 @@ module.exports = {
   collectCoverageFrom: ['packages/**/*.ts', '!**/__tests__/**', '!**/dist/**', '!**/node_modules/**'],
   testEnvironment: 'node',
   moduleNameMapper: {
-    '^@nestjs-query/(.*)$': '<rootDir>/packages/$1/src',
+    '^@moogs-nestjs-query/(.*)$': '<rootDir>/packages/$1/src',
   },
 };

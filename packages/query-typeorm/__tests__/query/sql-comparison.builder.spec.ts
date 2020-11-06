@@ -1,4 +1,4 @@
-import { CommonFieldComparisonBetweenType } from '@nestjs-query/core';
+import { CommonFieldComparisonBetweenType } from '@moogs-nestjs-query/core';
 import { TestEntity } from '../__fixtures__/test.entity';
 import { SQLComparisonBuilder } from '../../src/query';
 import { randomString } from '../../src/common';

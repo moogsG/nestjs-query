@@ -1,6 +1,6 @@
 {
-  "name": "nestjs-query",
-  "private": true,
+  "name": "moogs-nestjs-query",
+  "private": false,
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna run clean",

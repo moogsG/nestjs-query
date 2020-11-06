@@ -11,7 +11,7 @@ import {
   GetByIdOptions,
   UpdateOneOptions,
   DeleteOneOptions,
-} from '@nestjs-query/core';
+} from '@moogs-nestjs-query/core';
 import lodashPick from 'lodash.pick';
 import { Model, ModelCtor } from 'sequelize-typescript';
 import { WhereOptions } from 'sequelize';
@@ -46,7 +46,7 @@ export class SequelizeQueryService<Entity extends Model<Entity>>
   }
 
   /**
-   * Query for multiple entities, using a Query from `@nestjs-query/core`.
+   * Query for multiple entities, using a Query from `@moogs-nestjs-query/core`.
    *
    * @example
    * ```ts
@@ -163,7 +163,7 @@ export class SequelizeQueryService<Entity extends Model<Entity>>
   }
 
   /**
-   * Update multiple entities with a `@nestjs-query/core` Filter.
+   * Update multiple entities with a `@moogs-nestjs-query/core` Filter.
    *
    * @example
    * ```ts
@@ -203,7 +203,7 @@ export class SequelizeQueryService<Entity extends Model<Entity>>
   }
 
   /**
-   * Delete multiple records with a `@nestjs-query/core` `Filter`.
+   * Delete multiple records with a `@moogs-nestjs-query/core` `Filter`.
    *
    * @example
    *

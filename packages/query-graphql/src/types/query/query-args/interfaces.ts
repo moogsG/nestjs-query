@@ -1,4 +1,4 @@
-import { Class, Filter, Query, SortField } from '@nestjs-query/core';
+import { Class, Filter, Query, SortField } from '@moogs-nestjs-query/core';
 import { PagingStrategies, PagingTypes, StaticPagingTypes } from '../paging';
 
 export type BaseQueryArgsTypeOpts<DTO> = {

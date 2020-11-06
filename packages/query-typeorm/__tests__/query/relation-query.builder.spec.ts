@@ -1,5 +1,5 @@
 import { QueryBuilder } from 'typeorm';
-import { Class, Query, SortDirection, SortNulls } from '@nestjs-query/core';
+import { Class, Query, SortDirection, SortNulls } from '@moogs-nestjs-query/core';
 import { closeTestConnection, createTestConnection, getTestConnection } from '../__fixtures__/connection.fixture';
 import { TestRelation } from '../__fixtures__/test-relation.entity';
 import { TestEntity } from '../__fixtures__/test.entity';

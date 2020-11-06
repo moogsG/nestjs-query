@@ -1,4 +1,4 @@
-import { Class, MetaValue } from '@nestjs-query/core';
+import { Class, MetaValue } from '@moogs-nestjs-query/core';
 import { MutationArgsType } from '../types';
 import { HookFunc } from './hook.decorator';
 import { HookArgs } from './hook-args.decorator';

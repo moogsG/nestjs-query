@@ -1,4 +1,4 @@
-import { NoOpQueryService, QueryService } from '@nestjs-query/core';
+import { NoOpQueryService, QueryService } from '@moogs-nestjs-query/core';
 import { TestResolverDTO } from './test-resolver.dto';
 
 @QueryService(TestResolverDTO)

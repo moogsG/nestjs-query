@@ -1,4 +1,4 @@
-import { Class, FilterFieldComparison, FilterComparisonOperators } from '@nestjs-query/core';
+import { Class, FilterFieldComparison, FilterComparisonOperators } from '@moogs-nestjs-query/core';
 import { IsBoolean, IsOptional } from 'class-validator';
 import { upperCaseFirst } from 'upper-case-first';
 import {

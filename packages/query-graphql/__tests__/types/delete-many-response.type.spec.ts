@@ -1,5 +1,5 @@
 import { Resolver, Query } from '@nestjs/graphql';
-import { DeleteManyResponse } from '@nestjs-query/core';
+import { DeleteManyResponse } from '@moogs-nestjs-query/core';
 import { DeleteManyResponseType } from '../../src/types';
 import { deleteManyResponseTypeSDL, expectSDL } from '../__fixtures__';
 

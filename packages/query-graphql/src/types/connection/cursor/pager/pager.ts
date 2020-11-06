@@ -1,4 +1,4 @@
-import { Query } from '@nestjs-query/core';
+import { Query } from '@moogs-nestjs-query/core';
 import { OffsetPagingOpts, PagerStrategy, PagingOpts } from './strategies';
 import { Count, QueryMany } from '../../interfaces';
 import { EdgeType } from '../edge.type';

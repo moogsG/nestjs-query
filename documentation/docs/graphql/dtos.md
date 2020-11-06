@@ -27,7 +27,7 @@ In addition to the normal field options you can also specify the following optio
 In the following example we allow `id`, `title`, and `completed` to be used in queries.
 
 ```ts title="todo-item.dto.ts"
-import { FilterableField } from '@nestjs-query/query-graphql';
+import { FilterableField } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime, Field } from '@nestjs/graphql';
 
 @ObjectType('TodoItem')
@@ -59,7 +59,7 @@ For the `id` field only `eq`, `neq`, `in`, and `notIn` comparisons will be expos
 The `title` field will only allow `eq`, `like`, and `notLike`.
 
 ```ts title="todo-item.dto.ts" {6,9}
-import { FilterableField } from '@nestjs-query/query-graphql';
+import { FilterableField } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime, Field } from '@nestjs/graphql';
 
 @ObjectType('TodoItem')
@@ -87,7 +87,7 @@ export class TodoItemDTO {
 In the following example the `filterRequired` option is applied to the `completed` field, ensuring that all endpoints that use a filter will require a comparison on the `completed` field.
 
 ```ts title="todo-item.dto.ts" {12}
-import { FilterableField } from '@nestjs-query/query-graphql';
+import { FilterableField } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime, Field } from '@nestjs/graphql';
 
 @ObjectType('TodoItem')

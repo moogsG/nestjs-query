@@ -1,4 +1,4 @@
-import { Class } from '@nestjs-query/core';
+import { Class } from '@moogs-nestjs-query/core';
 import { PagingStrategies } from './paging';
 import {
   CursorQueryArgsType,

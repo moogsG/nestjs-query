@@ -1,5 +1,5 @@
 import { cursorToOffset, offsetToCursor } from 'graphql-relay';
-import { Query } from '@nestjs-query/core';
+import { Query } from '@moogs-nestjs-query/core';
 import { CursorPagingType } from '../../../../query';
 import { OffsetPagingOpts, PagerStrategy } from './pager-strategy';
 import { hasBeforeCursor, isBackwardPaging, isForwardPaging } from './helpers';

@@ -1,7 +1,7 @@
 // eslint-disable-next-line max-classes-per-file
 import { Field, ObjectType, Query, Resolver } from '@nestjs/graphql';
 import { plainToClass } from 'class-transformer';
-import { SortDirection } from '@nestjs-query/core';
+import { SortDirection } from '@moogs-nestjs-query/core';
 import { ConnectionType, CursorPagingType, StaticConnectionType } from '../../../src';
 import { connectionObjectTypeSDL, connectionObjectTypeWithTotalCountSDL, expectSDL } from '../../__fixtures__';
 import { KeySet } from '../../../src/decorators';

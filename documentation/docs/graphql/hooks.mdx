@@ -50,7 +50,7 @@ context.
 In this example we set the createdBy field based on the context.
 
 ```ts {7-10}
-import { FilterableField, BeforeCreateOne, CreateOneInputType } from '@nestjs-query/query-graphql';
+import { FilterableField, BeforeCreateOne, CreateOneInputType } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime, Field } from '@nestjs/graphql';
 import { GqlContext } from '../../interfaces';
 import { getUserName } from '../../helpers';
@@ -83,7 +83,7 @@ graphql context.
 In this example we set the createdBy field on each record based on the context.
 
 ```ts {7-11}
-import { FilterableField, BeforeCreateMany, CreateManyInputType } from '@nestjs-query/query-graphql';
+import { FilterableField, BeforeCreateMany, CreateManyInputType } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime, Field } from '@nestjs/graphql';
 import { GqlContext } from '../../interfaces';
 import { getUserName } from '../../helpers';
@@ -117,7 +117,7 @@ context.
 In this example we set the updatedBy field in the update.
 
 ```ts {7-10}
-import { FilterableField, BeforeUpdateOne, UpdateOneInputType } from '@nestjs-query/query-graphql';
+import { FilterableField, BeforeUpdateOne, UpdateOneInputType } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType } from '@nestjs/graphql';
 import { GqlContext } from '../../interfaces';
 import { getUserName } from '../../helpers';
@@ -150,7 +150,7 @@ graphql context.
 In this example we set the updatedBy field in the update.
 
 ```ts {7-10}
-import { FilterableField, BeforeUpdateMany, UpdateManyInputType } from '@nestjs-query/query-graphql';
+import { FilterableField, BeforeUpdateMany, UpdateManyInputType } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType } from '@nestjs/graphql';
 import { GqlContext } from '../../interfaces';
 import { getUserName } from '../../helpers';

@@ -1,4 +1,4 @@
-import { Class } from '@nestjs-query/core';
+import { Class } from '@moogs-nestjs-query/core';
 import { resolve } from 'path';
 import { instance, mock } from 'ts-mockito';
 import { Test } from '@nestjs/testing';

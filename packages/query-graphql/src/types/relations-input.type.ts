@@ -1,4 +1,4 @@
-import { Class } from '@nestjs-query/core';
+import { Class } from '@moogs-nestjs-query/core';
 import { Field, ID, InputType } from '@nestjs/graphql';
 import { IsNotEmpty, ArrayNotEmpty, ArrayUnique } from 'class-validator';
 

@@ -1,4 +1,4 @@
-import { CommonFieldComparisonBetweenType, FilterComparisonOperators } from '@nestjs-query/core';
+import { CommonFieldComparisonBetweenType, FilterComparisonOperators } from '@moogs-nestjs-query/core';
 import { Op, WhereOptions } from 'sequelize';
 
 /**

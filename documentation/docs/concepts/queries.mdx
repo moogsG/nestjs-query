@@ -5,8 +5,8 @@ title: Queries
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The core of `nestjs-query` is the `Query`, it is used by `@nestjs-query/query-graphql`, `@nestjs-query/query-typeorm`
- `@nestjs-query/query-sequelize` and `@nestjs-query/query-mongoose`.
+The core of `nestjs-query` is the `Query`, it is used by `@moogs-nestjs-query/query-graphql`, `@moogs-nestjs-query/query-typeorm`
+ `@moogs-nestjs-query/query-sequelize` and `@moogs-nestjs-query/query-mongoose`.
 
 The query interface contains three optional fields.
 
@@ -39,7 +39,7 @@ Lets create a simple filter that would allow us to filter for titles equal to `'
 ### Simple
 
 ```ts
-import { Query } from '@nestjs-query/core';
+import { Query } from '@moogs-nestjs-query/core';
 
 const q: Query<MyClass> = {
   filter: {
@@ -53,7 +53,7 @@ const q: Query<MyClass> = {
 You can also filter on multiple fields.
 
 ```ts
-import { Query } from '@nestjs-query/core';
+import { Query } from '@moogs-nestjs-query/core';
 
 const q: Query<MyClass> = {
   filter: {
@@ -70,7 +70,7 @@ const q: Query<MyClass> = {
 If you include multiple comparisons for a single field they will be ORed together.
 
 ```ts
-import { Query } from '@nestjs-query/core';
+import { Query } from '@moogs-nestjs-query/core';
 
 const q: Query<MyClass> = {
   filter: {
@@ -200,7 +200,7 @@ The `sorting` field is an array of object containing:
 <TabItem value="single">
 
 ```ts
-// import { SortDirection } from '@nestjs-query/core';
+// import { SortDirection } from '@moogs-nestjs-query/core';
 
 const q: Query<MyClass> = {
     sorting: [{field: 'title', direction: SortDirection.DESC}],
@@ -211,7 +211,7 @@ const q: Query<MyClass> = {
 <TabItem value="multi">
 
 ```ts
-// import { SortDirection } from '@nestjs-query/core';
+// import { SortDirection } from '@moogs-nestjs-query/core';
 
 const q: Query<MyClass> = {
     sorting: [

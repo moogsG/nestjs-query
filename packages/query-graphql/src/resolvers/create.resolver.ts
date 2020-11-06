@@ -3,7 +3,7 @@
  * @packageDocumentation
  */
 // eslint-disable-next-line max-classes-per-file
-import { Class, DeepPartial, QueryService } from '@nestjs-query/core';
+import { Class, DeepPartial, QueryService } from '@moogs-nestjs-query/core';
 import { Args, ArgsType, InputType, PartialType, Resolver } from '@nestjs/graphql';
 import omit from 'lodash.omit';
 import { DTONames, getDTONames } from '../common';

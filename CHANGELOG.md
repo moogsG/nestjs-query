@@ -874,7 +874,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ## v0.5.1
 
 * [DOCS] Added clarification around individual resolvers and relations with examples [#42](https://github.com/doug-martin/nestjs-query/issues/42)
-* [ADDED] Exposed `Relatable` mixin from `@nestjs-query/graphql` [#42](https://github.com/doug-martin/nestjs-query/issues/42)
+* [ADDED] Exposed `Relatable` mixin from `@moogs-nestjs-query/graphql` [#42](https://github.com/doug-martin/nestjs-query/issues/42)
 
 ## v0.5.0
 
@@ -945,7 +945,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## v0.0.4
 
-* Add files field to `@nestjs-query/core` `package.json`
+* Add files field to `@moogs-nestjs-query/core` `package.json`
 
 ## v0.0.3
 

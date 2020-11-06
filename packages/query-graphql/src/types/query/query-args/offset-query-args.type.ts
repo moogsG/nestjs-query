@@ -1,4 +1,4 @@
-import { Class, Filter, Paging, Query, SortField } from '@nestjs-query/core';
+import { Class, Filter, Paging, Query, SortField } from '@moogs-nestjs-query/core';
 import { ArgsType, Field } from '@nestjs/graphql';
 import { ValidateNested, Validate } from 'class-validator';
 import { Type } from 'class-transformer';

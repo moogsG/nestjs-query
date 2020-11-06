@@ -1,5 +1,5 @@
 // eslint-disable-next-line max-classes-per-file
-import { SortDirection, SortField, SortNulls } from '@nestjs-query/core';
+import { SortDirection, SortField, SortNulls } from '@moogs-nestjs-query/core';
 import * as nestjsGraphql from '@nestjs/graphql';
 import { plainToClass } from 'class-transformer';
 import { validateSync } from 'class-validator';

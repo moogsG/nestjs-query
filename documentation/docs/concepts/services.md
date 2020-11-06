@@ -219,12 +219,12 @@ You can create your own service to use with the `CRUDResolver` as long as it imp
 
 There are a number of persistence `QueryServices` that are provided out of the box.
 
-* [@nestjs-query/query-typeorm](../persistence/typeorm/getting-started.md)
-* [@nestjs-query/query-sequelize](../persistence/sequelize/getting-started.md)
-* [@nestjs-query/query-mongoose](../persistence/mongoose/getting-started.md)
+* [@moogs-nestjs-query/query-typeorm](../persistence/typeorm/getting-started.md)
+* [@moogs-nestjs-query/query-sequelize](../persistence/sequelize/getting-started.md)
+* [@moogs-nestjs-query/query-mongoose](../persistence/mongoose/getting-started.md)
 
 
-In addition to the persistence `QueryServices` `@nestjs-query/core` provides a few helper services that can be used for more complex use cases.
+In addition to the persistence `QueryServices` `@moogs-nestjs-query/core` provides a few helper services that can be used for more complex use cases.
 
 When designing the base services we have chosen composition over inheritance. This approach lends itself well to modeling complex services without repeating yourself.
 
@@ -248,7 +248,7 @@ passed to the `queryService` to fetch the relations.
 For example, we could wrap the `TodoItem` query service and add a `completedSubTasks` relation.
 
 ```ts title="todo-item/todo-item.service.ts"
-import { InjectQueryService, QueryService, RelationQueryService } from '@nestjs-query/core';
+import { InjectQueryService, QueryService, RelationQueryService } from '@moogs-nestjs-query/core';
 import { TodoItemEntity } from './todo-item.entity';
 import { SubTaskEntity } from '../sub-task/sub-task.entity';
 
@@ -277,7 +277,7 @@ export class TodoItemService extends RelationQueryService<TodoItemEntity> {
 Once the `relation` is defined in the query service we can add it to our `DTO` to expose it in our schema.
 
 ```ts title="todo-item/todo-item.dto.ts"
-import { FilterableField, FilterableConnection, KeySet } from '@nestjs-query/query-graphql';
+import { FilterableField, FilterableConnection, KeySet } from '@moogs-nestjs-query/query-graphql';
 import { ObjectType, ID, GraphQLISODateTime, Field } from '@nestjs/graphql';
 import { SubTaskDTO } from '../../sub-task/dto/sub-task.dto';
 
@@ -315,8 +315,8 @@ Next we need to export the `SubTask` query service from the `SubTaskModule` so w
 `TodoItemService`.
 
 ```ts title='sub-task/sub-task.module.ts'
-import { NestjsQueryGraphQLModule } from '@nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
 import { Module } from '@nestjs/common';
 import { SubTaskDTO } from './dto/sub-task.dto';
 import { SubTaskEntity } from './sub-task.entity';
@@ -349,8 +349,8 @@ Now we can import the `SubTaskModule` into the `TodoItemModule` so the `SubTask`
 the `TodoItemService`.
 
 ```ts title="todo-item/todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './dto/todo-item.dto';
 import { TodoItemAssembler } from './todo-item.assembler';
@@ -453,7 +453,7 @@ We can now add timed logging to any query service.
 Lets add it to our `TodoItemQueryService`
 
 ```ts title="todo-item/todo-item.service.ts"
-import { InjectQueryService, QueryService } from '@nestjs-query/core';
+import { InjectQueryService, QueryService } from '@moogs-nestjs-query/core';
 import { MutationLoggerQueryService } from '../utilities/mutation-logger-query.service';
 import { TodoItemEntity } from './todo-item.entity';
 
@@ -469,8 +469,8 @@ export class TodoItemService extends MutationLoggerQueryService<TodoItemEntity> 
 Don't forget to use your custom query service in your module
 
 ```ts title="todo-item/todo-item.module.ts"
-import { NestjsQueryGraphQLModule } from '@nestjs-query/query-graphql';
-import { NestjsQueryTypeOrmModule } from '@nestjs-query/query-typeorm';
+import { NestjsQueryGraphQLModule } from '@moogs-nestjs-query/query-graphql';
+import { NestjsQueryTypeOrmModule } from '@moogs-nestjs-query/query-typeorm';
 import { Module } from '@nestjs/common';
 import { TodoItemDTO } from './dto/todo-item.dto';
 import { TodoItemEntity } from './todo-item.entity';
@@ -518,7 +518,7 @@ import {
   QueryService,
   UpdateManyResponse,
   UpdateOneOptions,
-} from '@nestjs-query/core';
+} from '@moogs-nestjs-query/core';
 import { NotFoundException } from '@nestjs/common';
 import { TodoItemEntity } from './todo-item.entity';
 

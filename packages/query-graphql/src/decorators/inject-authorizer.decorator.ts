@@ -1,4 +1,4 @@
-import { Class } from '@nestjs-query/core';
+import { Class } from '@moogs-nestjs-query/core';
 import { Inject } from '@nestjs/common';
 import { getAuthorizerToken } from '../auth';
 

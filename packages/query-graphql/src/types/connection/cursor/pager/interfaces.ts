@@ -1,4 +1,4 @@
-import { Query } from '@nestjs-query/core';
+import { Query } from '@moogs-nestjs-query/core';
 import { PagingOpts } from './strategies';
 import { CursorQueryArgsType } from '../../../query';
 import { Count, QueryMany } from '../../interfaces';

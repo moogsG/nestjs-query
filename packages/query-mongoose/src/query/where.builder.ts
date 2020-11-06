@@ -1,4 +1,4 @@
-import { Filter, FilterComparisons, FilterFieldComparison } from '@nestjs-query/core';
+import { Filter, FilterComparisons, FilterFieldComparison } from '@moogs-nestjs-query/core';
 import { FilterQuery, Document } from 'mongoose';
 import { EntityComparisonField, ComparisonBuilder } from './comparison.builder';
 
@@ -66,14 +66,21 @@ export class WhereBuilder<Entity extends Document> {
     cmp: FilterFieldComparison<Entity[T]>,
   ): FilterQuery<Entity> {
     const opts = Object.keys(cmp) as (keyof FilterFieldComparison<Entity[T]>)[];
-    if (opts.length === 1) {
-      const cmpType = opts[0];
-      return this.comparisonBuilder.build(field, cmpType, cmp[cmpType] as EntityComparisonField<Entity, T>);
+    try {
+      if (opts.length === 1) {
+        const cmpType = opts[0];
+        return this.comparisonBuilder.build(field, cmpType, cmp[cmpType] as EntityComparisonField<Entity, T>);
+      }
+      return {
+        $or: opts.map((cmpType) =>
+          this.comparisonBuilder.build(field, cmpType, cmp[cmpType] as EntityComparisonField<Entity, T>),
+        ),
+      } as FilterQuery<Entity>;
+    } catch (err) {
+      const filter: any = {};
+      filter[`${field}.${opts[0]}`] = cmp[opts[0]];
+      return this.filterFields(filter) as FilterQuery<Entity>;
     }
-    return {
-      $or: opts.map((cmpType) =>
-        this.comparisonBuilder.build(field, cmpType, cmp[cmpType] as EntityComparisonField<Entity, T>),
-      ),
-    } as FilterQuery<Entity>;
+
   }
 }

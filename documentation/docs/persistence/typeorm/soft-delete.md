@@ -48,8 +48,8 @@ The important column is the `deletedAt` column in the above example. Without thi
 Once you have added the column to your entity you need to declare your service setting the `useSoftDelete` flag.
 
 ```ts title="todo-item.service.ts"
-import { QueryService } from '@nestjs-query/core';
-import { TypeOrmQueryService } from '@nestjs-query/query-typeorm';
+import { QueryService } from '@moogs-nestjs-query/core';
+import { TypeOrmQueryService } from '@moogs-nestjs-query/query-typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { TodoItemEntity } from './todo-item.entity';
@@ -70,8 +70,8 @@ Notice that when calling `super` the `useSoftDelete` option is set to `true`. Th
 `nestjs-query` does not automatically expose `restore` mutations. In this example we add the restore mutations.
 
 ```ts title="todo-item.resolver.ts"
-import { UpdateManyResponse, Filter } from '@nestjs-query/core';
-import { CRUDResolver, FilterType, UpdateManyResponseType } from '@nestjs-query/query-graphql';
+import { UpdateManyResponse, Filter } from '@moogs-nestjs-query/core';
+import { CRUDResolver, FilterType, UpdateManyResponseType } from '@moogs-nestjs-query/query-graphql';
 import { Resolver, Args, Mutation, ID } from '@nestjs/graphql';
 import { TodoItemDTO } from './dto/todo-item.dto';
 import { TodoItemService } from './todo-item.service';
